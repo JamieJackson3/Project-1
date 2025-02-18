@@ -1,0 +1,133 @@
+body {
+display: grid;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: 1fr;
+background-color: cornflowerblue;
+margin: 0;
+padding: 0;
+}
+
+/* Header */
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+color: white;
+padding: 20px;
+height: 50px;
+grid-column: 1/-1;
+}
+
+/* Navigation */
+
+nav ul {
+list-style-type: none;
+display: flex;
+gap: 20px;
+}
+
+nav ul li {
+display: inline;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+
+/* Grid Container */
+
+.container {
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto 1fr auto auto;
+gap: 0;
+width: 100%;
+}
+
+/* side bar */
+
+.sidebar {
+background-color: #ddd;
+padding: 20px;
+}
+
+.left-sidebar {
+background-color: deepskyblue;
+height: auto;
+}
+
+.right-sidebar {
+    background-color: blue;
+    height: auto;
+}
+
+
+/* main content */
+
+.main-content{
+background-color: darkslateblue;
+padding: 20px;
+height: auto;
+}
+
+/* full width box */
+
+.full-width-box {
+background-color: lightblue;
+grid-column-end: 1/-1;
+height: auto;
+padding: 50px;
+}
+
+/* footer */
+
+footer {
+background-color: rgb(74, 185, 245);
+color: white;
+text-align: center;
+padding: 20px;
+grid-column: 1/-1;
+}
+
+/* Contact Grid Container */
+
+.contact-container {
+
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 0;
+    width: 100%;
+    }
+    
+    /* Contact ide bar */
+    
+    .contact-sidebar {
+    background-color: #ddd;
+    padding: 20px;
+    }
+    
+    .contact-left-sidebar {
+    background-color: deepskyblue;
+    height: auto;
+    }
+    
+    .contact-right-sidebar {
+        background-color: blue;
+        height: auto;
+    }
+    
+    
+    /* Contact main content */
+    
+    .contact-main-content{
+    background-color: darkslateblue;
+    padding: 20px;
+    height: auto;
+    }
+    
